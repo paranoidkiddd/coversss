@@ -192,6 +192,20 @@ font-size: 18px;
     border-radius: 70px;
 }
 
+.card__gold{
+    width: 350px;
+    height: 500px;
+    border: rgb(255, 208, 0) 3px solid;
+    border-radius: 70px;
+}
+
+.card__red{
+    width: 350px;
+    height: 500px;
+    border: rgb(255, 8, 0) 3px solid;
+    border-radius: 70px;
+}
+
 .card__cover{
 min-height: 100px;
 padding-top: 35px;
