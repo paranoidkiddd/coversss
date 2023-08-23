@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+
+::-webkit-scrollbar { /* 1 - скроллбар */
+    width: 1px;
+    height: 1px;
+    background-color: #000000;
+  }
+
+  ::-webkit-scrollbar-button { /* 2 - кнопка */
+
+  }
+
+  ::-webkit-scrollbar-track { /* 3 - трек */
+  }
+
+  ::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
+  }
+
+  ::-webkit-scrollbar-thumb { /* 5 - ползунок */
+    border-radius: 1px;
+    background-color: #585858;
+  }
+
+  ::-webkit-scrollbar-corner { /* 6 - уголок */
+  }
+
+  ::-webkit-resizer { /* 7 - изменение размеров */
+  }
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+
+body {
+color: white;
+font: 400 16px/28px 'Inter',Arial,Helvetica, sans-serif;;
+background-color: #0e0d0d;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .4s;
+} 
+
+ul li,
+ol li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+button {
+    display: block;
+    border: none;
+    color: inherit;
+    font: inherit;
+    background-color: transparent;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.nav{
+    background-color: #0e0d0d;
+    border-bottom: #585858 1px solid;
+}
+
+.naw-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.logo{
+    font-size: 34px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-list__item{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-list__item:hover{
+    color: rgb(209, 255, 2);
+    transition: .2,5s;
+}
+
+.header{
+    padding: 40px 0;
+    min-height: 695px;
+    background-color: #0e0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__wrapper{
+max-width: 900px;
+}
+
+.header__about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header__text{
+text-align: center;
+font-size: 18px;
+}
+
+.footer{
+    border-top: #585858 1px solid;
+}
+
+.footer__text {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.logs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 40px;
+}
+
+.header__faq{
+    padding: 40px 0;
+    min-height: 695px;
+    background-color: #0e0d0d;
+    display: flex;
+    
+}
+
+.qa{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size: 18px;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.photo__line{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    gap: 85px;
+}
+
+.header__pesni{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    border: white 3px solid;
+    border-radius: 70px;
+}
+
+.card:hover, .card__gold:hover, .card__red:hover{
+    width: 350px;
+    height: 500px;
+    border: rgb(209, 255, 2) 3px solid;
+    border-radius: 70px;
+    background-color: rgb(70, 70, 70);
+    transition: .5s;
+}
+
+.card__gold{
+    width: 350px;
+    height: 500px;
+    border: rgb(255, 208, 0) 3px solid;
+    border-radius: 70px;
+}
+
+.card__red{
+    width: 350px;
+    height: 500px;
+    border: rgb(255, 8, 0) 3px solid;
+    border-radius: 70px;
+}
+
+.card__cover{
+min-height: 100px;
+padding-top: 35px;
+padding-left: 30px;
+
+
+}
+
+.card__track{
+text-align: center;
+padding-top: 30px;
+}
+
+.card__time{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card__ocenka {
+    font-size: 28px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.card__ocenka__number{
+    color: rgb(255, 208, 0);
+}
+
+.line{
+    display: flex;
+    gap: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    
+}
+
+.audio__track{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 500px;
+}
+
+.audio__name{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.audio__ocenka{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.audio_ocenka_glavnaya{
+    color:rgb(255, 208, 0);
+}
+
+.comm{
+    border: white 3px solid;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 45px;
+}
+
+.card__var1{
+    background-color: #fff;
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 45px;
+}
+
+.card__img{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+  }
+
+  .card__name{
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    padding-top: 33px;
+    color: #000000;
+}
+
+.box1{
+    display: flex;
+}
+
+.card__text{
+    padding-left: 100px;
+    padding-top: 7px;
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    padding-top: 33px;
+}
+
+.card__first{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.card__text2{
+    padding-left: 100px;
+    padding-top: 7px;
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    padding-top: 33px;
+}
+
+.card__comm__ocenka{
+    color: #000000;
+    font-size: 30px;
+    padding-top: 33px;
+    padding-left: 25px;
+}
+
+
+.card__comm__ocenka__rutuk__kadilak{
+    color: #000000;
+    font-size: 30px;
+    padding-top: 33px;
+    padding-left: 35px;
+}
+
+.card__comm__ocenka__red{
+    color: rgb(185, 7, 7);
+}
+
+
+.card__comm__ocenka__green{
+    color: rgb(57, 155, 0);
+}
+
+
+.card__comm__ocenka__yellow{
+    color:rgb(199, 162, 0);
+}
+
+.card__second{
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+
+.vajno__text{
+    
+    margin: 0 auto;
+}
